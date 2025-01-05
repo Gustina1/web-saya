@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Warna utama */
+:root {
+  --primary-pink: #ffc0cb;
+  --light-pink: #ffb6c1;
+  --dark-pink: #ff69b4;
+}
+
+header {
+  background: var(--primary-pink);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+nav {
+  background: var(--dark-pink);
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background: var(--primary-pink);
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--light-pink);
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--light-pink);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background: var(--primary-pink);
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  background: var(--light-pink);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid var(--light-pink);
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: var(--light-pink);
+}
+
+/* Style untuk tombol hapus */
+.delete-btn {
+  background: #ffc0cb; /* Mengubah dari #ffc0cb (merah) ke #ffc0cb (pink) */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: auto;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #ffb6c1; /* Mengubah dari #ffc0cb ke #ffb6c1 (light pink) */
+}
+
+/* Menyesuaikan lebar kolom aksi */
+table th:last-child,
+table td:last-child {
+  width: 100px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header,
+  nav,
+  main {
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 8px;
+  }
+}
